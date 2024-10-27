@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectar Construcciones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#154854',
+                        secondary: '#2A6F97',
+                        accent: '#61A5C2',
+                        light: '#A9D6E5',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/proyectar_logo.webp" alt="Proyectar Construcciones Logo" class="h-12">
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#inicio" class="text-primary hover:text-secondary">Inicio</a>
+                <a href="#experiencia" class="text-primary hover:text-secondary">Experiencia</a>
+                <a href="#servicios" class="text-primary hover:text-secondary">Servicios</a>
+                <a href="#proyectos" class="text-primary hover:text-secondary">Proyectos</a>
+                <a href="#planes" class="text-primary hover:text-secondary">Planes</a>
+                <a href="#contacto" class="text-primary hover:text-secondary">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+            <video autoplay loop muted class="absolute z-0 w-auto min-w-full min-h-full max-w-none">
+                <source src="images/Proyectar_bg_ds.mp4" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+            </video>
+            <div class="z-10 text-center text-white">
+                <h1 class="text-5xl font-bold mb-4">Proyectar Construcciones</h1>
+                <p class="text-2xl mb-8">Construyendo sueños desde hace más de 20 años</p>
+                <a href="#contacto" class="bg-accent text-primary px-8 py-4 rounded-lg text-xl hover:bg-light transition duration-300">Contáctanos</a>
+            </div>
+        </section>
+
+        <section id="experiencia" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 pr-8">
+                        <h2 class="text-3xl font-bold mb-8 text-primary">Nuestra Experiencia</h2>
+                        <p class="text-lg mb-4">
+                            Desde hace más de 20 años estamos abocados a la construcción de casas en barrios privados y proyectos de toda índole, como ser viviendas familiares y locales comerciales.
+                        </p>
+                        <p class="text-lg mb-4">
+                            Nuestra experiencia nos permite ofrecer soluciones innovadoras y de calidad, adaptadas a las necesidades específicas de cada cliente.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 mt-8 md:mt-0">
+                        <img src="images/ML318.webp" alt="Experiencia en construcción" class="rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="bg-light py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Nuestros Servicios</h2>
+                <p class="text-lg mb-4">
+                    Ofrecemos un servicio integral donde combinamos arquitectura con el diseño de mobiliario y acompañamos al cliente desde las ideas iniciales, hasta la materialización del objeto o espacio.
+                </p>
+                <p class="text-lg mb-4">
+                    Nuestro servicio comprende la generación de la idea principal, representación gráfica para la comprensión y elaboración de planos de detalle técnico para la ejecución.
+                </p>
+            </div>
+        </section>
+
+        <section id="proyectos" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Proyectos Anteriores</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <img src="images/SCs425.webp" alt="Proyecto 1" class="rounded-lg shadow-md">
+                    <img src="images/SCs128.webp" alt="Proyecto 2" class="rounded-lg shadow-md">
+                    <img src="images/SL590.webp" alt="Proyecto 3" class="rounded-lg shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <section id="planes" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Planes de Construcción</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Plan Bronce -->
+                    <div class="bg-light p-6 rounded-lg shadow-md hover:scale-105 transition duration-300">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Plan Bronce</h3>
+                        <p class="text-lg mb-4 text-primary">U$S 825 por m²</p>
+                        <ul class="list-disc list-inside mb-4 text-gray-700">
+                            <li>Construcción tradicional</li>
+                            <li>Terminaciones estándar</li>
+                            <li>Planos municipales</li>
+                            <li>Dirección de obra</li>
+                            <li>Plazo de obra: 8 meses</li>
+                            </br>
+                        </ul>
+                        <a href="#contacto" class="block text-center bg-secondary text-white px-4 py-2 rounded hover:bg-primary transition duration-300">Consultar</a>
+                    </div>
+        
+                    <!-- Plan Plata -->
+                    <div class="bg-light p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                        <div class="absolute -top-4 right-4 bg-secondary text-white px-4 py-1 rounded-full text-sm">
+                            Más elegido
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Plan Plata</h3>
+                        <p class="text-lg mb-4 text-primary">U$S 925 por m²</p>
+                        <ul class="list-disc list-inside mb-4 text-gray-700">
+                            <li>Construcción premium</li>
+                            <li>Terminaciones de alta calidad</li>
+                            <li>Planos municipales y cálculo estructural</li>
+                            <li>Dirección de obra</li>
+                            <li>Asesoramiento en diseño</li>
+                            <li>Plazo de obra: 6 meses</li>
+                        </ul>
+                        <a href="#contacto" class="block text-center bg-secondary text-white px-4 py-2 rounded hover:bg-primary transition duration-300">Consultar</a>
+                    </div>
+        
+                    <!-- Plan Oro -->
+                    <div class="bg-light p-6 rounded-lg shadow-md hover:scale-105 transition duration-300">
+                        <h3 class="text-xl font-bold mb-4 text-secondary">Plan Oro</h3>
+                        <p class="text-lg mb-4 text-primary">U$S 1125 por m²</p>
+                        <ul class="list-disc list-inside mb-4 text-gray-700">
+                            <li>Construcción premium plus</li>
+                            <li>Terminaciones de lujo</li>
+                            <li>Planos municipales y ejecutivos</li>
+                            <li>Cálculo estructural</li>
+                            <li>Dirección de obra</li>                            
+                            <li>Plazo de obra: 5 meses</li>
+                        </ul>
+                        <a href="#contacto" class="block text-center bg-secondary text-white px-4 py-2 rounded hover:bg-primary transition duration-300">Consultar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Contáctanos</h2>
+                <form class="max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="nombre" class="block text-gray-700 font-bold mb-2">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="telefono" class="block text-gray-700 font-bold mb-2">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensaje" class="block text-gray-700 font-bold mb-2">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition duration-300">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col items-center space-y-4">
+                <!-- Redes Sociales -->
+                <div class="flex space-x-6">
+                    <a href="https://www.instagram.com/proyectarconstruccionesok" class="hover:text-accent transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@proyectarconstrucciones3410" class="hover:text-accent transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube">
+                            <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+                            <path d="m10 15 5-3-5-3z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/company/tu-empresa" class="hover:text-accent transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect width="4" height="12" x="2" y="9"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                </div>
+                <!-- Información de Copyright -->
+                <p>&copy; 2024 Proyectar Construcciones. Todos los derechos reservados.</p>
+                <p>Buenos Aires, Argentina | Principales áreas de servicio: Sur del AMBA, Canning y San Vicente</p>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
